@@ -34,5 +34,12 @@ class UsersController extends Controller
         session()->flash('success', '欢迎，您将在这里开启一段新的旅程~');
         return redirect()->route('users.show', [$user]);
     }
+
+    // public function store(Request $request)
+    // {
+    //     session()->flash('danger', '很抱歉，当前不允许注册用户');
+    //     return redirect()->back()->withInput();
+    // }
+
 }
 
